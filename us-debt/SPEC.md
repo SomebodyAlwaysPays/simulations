@@ -1,6 +1,6 @@
 # US federal debt Monte Carlo: model spec (v1)
 
-Purpose: a transparent, reproducible simulation of US federal debt held by the public for fiscal years 2027–2041 (15 years), run 100,000 times per fiscal scenario. It is the second model in the Somebody Always Pays simulation series (the first is France).
+Purpose: a transparent, reproducible simulation of US federal debt held by the public for fiscal years 2027–2041 (15 years), run 100,000 times per fiscal scenario. It is the first model published in the Somebody Always Pays simulation series; France comes next.
 
 ## Deliverables (all inside this `model/` folder)
 
