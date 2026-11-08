@@ -4,7 +4,7 @@ Code and data behind the simulation videos on the YouTube channel [Somebody Alwa
 
 | Folder | Video | What it simulates |
 |---|---|---|
-| [us-debt](us-debt/) | We Simulated America's $40 Trillion Debt 100,000 Times | US federal debt held by the public, fiscal years 2027–2041, under four budget scenarios |
+| [us-debt](us-debt/) | [Who Will ACTUALLY Pay America's $40 Trillion Debt?](https://youtu.be/Sm8ITrqb-Xo) | US federal debt held by the public, fiscal years 2027–2041, under four budget scenarios |
 
 ## Run a model
 
