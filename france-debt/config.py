@@ -1,0 +1,43 @@
+"""Model inputs and sources; percentages are expressed in percentage points."""
+SEED = 20261030  # Spec fixed seed
+RUNS = 100_000  # Spec
+SENSITIVITY_RUNS = 20_000  # Spec
+START_YEAR, END_YEAR = 2026, 2041  # Spec
+HISTORY_START, HISTORY_END, BLOCK_LENGTH = 1991, 2025, 2  # Spec
+PATH_COUNT = 300  # Spec
+PERCENTILES = (5, 10, 25, 50, 75, 90, 95)  # Spec
+B0 = 119.3  # Government 2027 budget forecast, Oct 2026
+GDP0 = 3045.0  # EUR bn; derived from INSEE Q2 2026
+RATE0 = 2.2  # Cour des comptes Jun 2026 interest / average debt
+PB0 = -2.9  # Government 2026 deficit forecast minus interest
+DEFICIT0 = 5.4  # Government 2026 deficit forecast, Oct 2026
+BUND0 = 3.35  # Bundesbank, 27 Oct 2026
+SPREAD0 = 1.59  # Bundesbank, 27 Oct 2026
+REVENUE_SHARE = 52.2  # INSEE Premiere no. 2106 (29 May 2026), 2025 revenue, percent GDP
+POPULATION_MILLIONS = 69.1  # INSEE Premiere no. 2087 (Jan 2026): population on 1 Jan 2026
+REAL_GROWTH = 1.0  # HCFP, Banque de France, OFCE, Oct 2026
+DEFLATOR = 1.8  # ECB target anchor assumption
+BUND_LONG_RUN = 3.0  # Assumption
+BUND_SPEED = 0.25  # Assumption
+SPREAD_INTERCEPT = 1.20  # Pamies, Carnot & Patarau 2021; assumption
+# Pamies, Carnot & Patarau 2021 (EC Discussion Paper 141), Table 1, regression (4): 0.0014 + 0.0559 pp of spread
+# per pp of debt above 90% of GDP. France is above 90% in every run, so one slope applies on both sides of the kink.
+SPREAD_LOW = 0.0573
+SPREAD_HIGH = 0.0573
+SPREAD_KINK = 130.0  # Kept for sensitivity runs; inactive while both slopes are equal
+SPREAD_PERSISTENCE = 0.5  # Spec assumption
+SPREAD_SD = 0.30  # Spec assumption
+SPREAD_FLOOR = 0.20  # Spec assumption
+REFINANCE = 0.13  # Candriam/AFP Oct 2026 (14% due in 2027, bills included); AFT average maturity 8y158d at 30 Sep 2026 (~1/8.4 a year)
+MIDYEAR = 0.5  # Debt refinanced during a year pays the new yield for half of that year
+BUDGET_CYCLE = 0.5  # Assumption, typical EU semi-elasticity
+SLIPPAGE_PERSISTENCE = 0.5  # Spec assumption
+SLIPPAGE_SD = 0.5  # Spec assumption
+PLAN_B_STEP, PLAN_B_CAP = 0.3, 0.0  # Spec
+PLAN_C = (-2.3, -1.7, -0.9, -0.2, 0.5)  # IMF Article IV 2026 / spec
+PLAN_D_STEP, PLAN_D_CAP = 0.6, 1.8  # Cour des comptes Jun 2026 / spec
+DEBT_THRESHOLDS = (130, 140, 150, 200)  # Spec
+SPREAD_THRESHOLD, OAT_THRESHOLD = 2.25, 6.0  # 2011 record / spec
+IMF_B0, IMF_GROWTH, IMF_DEFLATOR = 118.5, 1.2, 1.5  # IMF Article IV 2026 / spec
+IMF_DEBT = (120.3, 121.1)  # IMF Article IV 2026
+CONE_REFERENCES = {'Banque de France VAR': 25.2, 'Banque de France BVAR': 28.5, 'European Commission': 19.5, 'ECB': 37.8}  # BdF WP 1019 Nov 2025

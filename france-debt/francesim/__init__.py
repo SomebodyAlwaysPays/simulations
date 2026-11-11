@@ -1,0 +1,1 @@
+"""France sovereign debt simulation."""

@@ -5,6 +5,7 @@ Code and data behind the simulation videos on the YouTube channel [Somebody Alwa
 | Folder | Video | What it simulates |
 |---|---|---|
 | [us-debt](us-debt/) | [Who Will ACTUALLY Pay America's $40 Trillion Debt?](https://youtu.be/Sm8ITrqb-Xo) | US federal debt held by the public, fiscal years 2027–2041, under four budget scenarios |
+| [france-debt](france-debt/) | France Could Cut for 15 Years and STILL Owe More (out 14 November 2026). Background: [France Taxes More Than Almost Anyone. So Why Is It BROKE?](https://youtu.be/c2SStIaRtus) | France's general-government debt, 2027–2041, under four budget plans |
 
 ## Run a model
 
@@ -23,4 +24,4 @@ These are conditional simulations: they show what happens under stated assumptio
 
 ## Licence
 
-[MIT](LICENSE). The input data in each `data/` folder comes from public sources (US Treasury, CBO, OMB, BEA, Census and FRED), credited in each model's README.
+[MIT](LICENSE). The input data in each model's data folder comes from public sources (US Treasury, CBO, OMB, BEA, Census, FRED, World Bank, INSEE and others), credited in each model's README.

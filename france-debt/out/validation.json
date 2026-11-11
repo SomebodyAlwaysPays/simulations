@@ -1,0 +1,30 @@
+{
+  "imf_replication": {
+    "2027": {
+      "model_debt": 120.47989884927665,
+      "imf_debt": 120.3,
+      "gap_model_minus_imf": 0.179898849276654
+    },
+    "2028": {
+      "model_debt": 122.36504224712786,
+      "imf_debt": 121.1,
+      "gap_model_minus_imf": 1.265042247127866
+    }
+  },
+  "cone_width_2031": {
+    "model_p90_minus_p10": 20.45024750255108,
+    "references": {
+      "Banque de France VAR": 25.2,
+      "Banque de France BVAR": 28.5,
+      "European Commission": 19.5,
+      "ECB": 37.8
+    }
+  },
+  "accounting_identity": {
+    "debt_change_sum": 19.196592896098778,
+    "snowball_minus_primary_sum": 19.196592896098768,
+    "difference": 1.0658141036401503e-14,
+    "tolerance": 1e-09,
+    "passes": true
+  }
+}
